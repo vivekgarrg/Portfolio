@@ -192,7 +192,18 @@ text-shadow: 0 0 3px #f9ca24,0 0 10px #f9ca24;
     color:#eee;
     padding: 1rem 0;
 }
-
+.home-items a{
+    width: fit-content;
+    padding: 1rem;
+    font-size: large;
+    border: 1px solid var(--yellow);
+    border-radius: 30px;
+    color: white;
+}
+.home-items a:hover{
+    color: var(--yellow);
+    box-shadow: 1px 1px 4px var(--yellow);
+}
 .about .row{
     display: flex;
     align-items: center;
@@ -318,8 +329,9 @@ text-shadow: 0 0 3px #f9ca24,0 0 10px #f9ca24;
     border: 1px solid #f9ca24;
     place-self: center;
     padding: 10px;
-    padding-left: 30px;
-    padding-right: 30px;
+    padding-left: 25px;
+    padding-right: 25px;
+    margin-top: 3vh;
     margin-bottom: 10vh;
     animation: mymove 6s infinite;
     border-radius: 20px;
@@ -425,11 +437,29 @@ text-shadow: 0 0 3px #f9ca24,0 0 10px #f9ca24;
     transform: 1.5s;
 }
 .portfolio h2{
-    color: white;
-  text-align: center;
-  
+    color: #1DA1F2;
+    font-size: large;
+    width: fit-content;
+    margin: auto;
+    margin-top: 8vh;
+    text-align: center;
+    padding: 2rem;
+    animation: fadeOut 5s infinite;
+    box-sizing: border-box;
+    box-shadow: 1px 1px 5px blue;
+    border-bottom-left-radius: 20%;
+    border-top-right-radius: 20%;
 }
-
+.portfolio h2:hover{
+    animation: none;
+   cursor: context-menu;
+   opacity: 2;
+   color: blue;
+}
+@keyframes fadeOut {
+    0% {opacity: 1;}
+    100% {opacity: 0.5;}
+ }
 .portfolio .box-container .box:hover
 {
     box-shadow: 0 3px 0 #1DA1F2 inset, 0 3px 30px 0 #1DA1F2,
