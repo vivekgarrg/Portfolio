@@ -6,8 +6,25 @@ function voice(){
   window.speechSynthesis.speak(utter);
 }
 
+function github(){
+  window.open(
+    "https://github.com/vivekgarrg", "_blank");
+}
+function twitter(){
+  window.open(
+    "https://twitter.com/vivekgarrg", "_blank");
+}
+function fb(){
+  window.open(
+    "https://www.instagram.com/vivekgarrg/", "_blank");
+}
+function lkdin(){
+  window.open(
+    "https://www.linkedin.com/in/vivekgarrg/", "_blank");
+}
 $(document).ready(function(){
     voice();
+    
     $('#menu').click(function(){
       $(this).toggleClass('fa-times');
       $('header').toggleClass('toggle');
@@ -44,5 +61,3 @@ $(document).ready(function(){
     });
   
   });
-
- 
