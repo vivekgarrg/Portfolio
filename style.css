@@ -156,29 +156,36 @@ text-shadow: 0 0 3px #f9ca24,0 0 10px #f9ca24;
     z-index: 1000;
     display: none;
 }
-
+#particles-js{
+    background-color: #111;
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
 .home{
     display: flex;
     justify-content: center;
     flex-flow: column;
     padding:0 15rem;
 }
-
-.home h3{
+.home-items{
+    position: absolute;
+}
+.home-items h3{
     font-size: 2.5rem;
     color:#fff;
 }
 
-.home h1{
+.home-items h1{
     font-size:5rem;
     color:#fff;
 }
 
-.home h1 span{
+.home-items h1 span{
     color:var(--yellow);
 }
 
-.home p{
+.home-items p{
     font-size:2rem;
     color:#eee;
     padding: 1rem 0;
@@ -320,24 +327,24 @@ text-shadow: 0 0 3px #f9ca24,0 0 10px #f9ca24;
     animation: text-animate 6s infinite;
     margin-top: 5px;
     font-family: cursive;
-    cursor:none;
+    cursor: context-menu;
 }
-.skill-img :hover{
+.skill-img  img:hover{
     transform: rotate(360deg);
     transition-duration: 1s;
    transform-origin: center;
 }
 @keyframes text-animate{
     from{color: #f9ca24}
-    to{ color:#E1306C;}
+    to{ color:#1DA1F2;}
 }
 @keyframes mymove {
     from {border: 1px solid #f9ca24;
         box-shadow:  0 3px 20px 0 #f9ca24,
          0 3px 20px 0 #f9ca24;}
     to {border: 1px solid black;
-        box-shadow:  0 3px 20px 0 #E1306C,
-         0 3px 20px 0 #E1306C;}
+        box-shadow:  0 3px 20px 0 #1DA1F2,
+         0 3px 20px 0 #1DA1F2;}
   }
 /* 
 .myskills .center{
@@ -413,6 +420,12 @@ text-shadow: 0 0 3px #f9ca24,0 0 10px #f9ca24;
     cursor: pointer;
     transform: 1.5s;
 }
+.portfolio h2{
+    color: white;
+  text-align: center;
+  
+}
+
 .portfolio .box-container .box:hover
 {
     box-shadow: 0 3px 0 #1DA1F2 inset, 0 3px 30px 0 #1DA1F2,
@@ -429,11 +442,7 @@ text-shadow: 0 0 3px #f9ca24,0 0 10px #f9ca24;
 .portfolio .box-container .box:hover iframe{
     transform: scale(0.9);
 }
-.sub-heading{
-    color: white;
-    text-align: center;
-    font-size: 5vh;
-}
+
 .contact .row{
     display: flex;
     align-items: center;
@@ -661,7 +670,6 @@ text-shadow: 0 0 3px #f9ca24,0 0 10px #f9ca24;
     .grid-container{
         grid-template-columns: repeat(2,1fr);
     }
-
  
  }
 
