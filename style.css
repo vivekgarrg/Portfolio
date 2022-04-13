@@ -166,9 +166,6 @@ text-shadow: 0 0 3px #f9ca24,0 0 10px #f9ca24;
     flex-flow: column;
     
 }
-/* .home{
-    
-} */
 .home-items{
     position: absolute;
     padding:0 15rem;
@@ -703,6 +700,10 @@ text-shadow: 0 0 3px #f9ca24,0 0 10px #f9ca24;
     }
     .grid-container{
         grid-template-columns: repeat(2,1fr);
+    }
+    .box iframe{
+        width: 100%;
+        height: auto;
     }
  
  }
